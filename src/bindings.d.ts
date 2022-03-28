@@ -1,0 +1,95 @@
+interface VideoList {
+    "total": number,
+    "data": {
+        "video_url": string,
+        "video_title": string,
+        "video_key_frame_url": string,
+        "guid": string,
+        "video_edit_mode": string,
+        "video_length": string,
+        "video_focus_date": string,
+        "video_id": string
+    }[],
+    "_t": number,
+}
+
+interface VideoInfo {
+    "ack": string,
+    "status": string,
+    "tag": string,
+    "title": string,
+    "play_channel": string,
+    "produce": string,
+    "editer_name": string,
+    "produce_id": string,
+    "column": string,
+    "f_pgmtime": string,
+    "segments": {
+        "guid": string,
+        "title": string,
+        "start": number,
+        "end": number,
+    }[],
+    "cdn_info": {
+        "cdn_vip": string,
+        "cdn_code": string,
+        "cdn_name": string,
+    },
+    "video": {
+        "totalLength": string,
+        "chapters": {
+            "duration": string,
+            "image": string,
+            "url": string,
+        }[],
+        "chapters2": {
+            "duration": string,
+            "image": string,
+            "url": string,
+        }[],
+        "chapters3": {
+            "duration": string,
+            "image": string,
+            "url": string,
+        }[],
+        "chapters4": {
+            "duration": string,
+            "image": string,
+            "url": string,
+        }[],
+        "validChapterNum": number,
+        "url": string,
+    },
+    "hls_cdn_info": {
+        "cdn_vip": string,
+        "cdn_code": string,
+        "cdn_name": string
+    },
+    "hls_url": string,
+    "asp_error_code": string,
+    "manifest": {
+        "audio_mp3": string,
+        "hls_audio_url": string,
+        "hls_enc_url": string,
+        "hls_h5e_url": string,
+        "hls_enc2_url": string,
+    },
+    "client_sid": string,
+    "public": string,
+    "is_invalid_copyright": string,
+    "is_protected": string,
+    "is_fn_hot": string,
+    "is_p2p_use": false,
+    "default_stream": string,
+    "lc": {
+        "isp_code": string,
+        "city_code": string,
+        "provice_code": string,
+        "country_code": string,
+        "ip": string,
+    },
+    "is_ipad_support": string,
+    "version": string,
+    "embed": string,
+    "is_fn_multi_stream": boolean,
+}
